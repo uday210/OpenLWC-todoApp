@@ -1,3 +1,7 @@
+# Demo
+![todo-lwc-app](https://user-images.githubusercontent.com/3188134/80280506-25245f80-8722-11ea-9b20-221be029f8d1.gif)
+
+
 # todolist
 
 Here will be some information about the app.
