@@ -1,0 +1,27 @@
+<template>
+    <!-- LWC sample component <my-greeting> -->
+    <div id="myDIV" class="header">
+        <h2 style="margin: 5px;">My To Do List</h2>
+        <input
+            value={todoItem}
+            onkeyup={todoItemChange}
+            type="text"
+            id="myInput"
+            placeholder="Add todo..."
+        />
+        <span class="addBtn" onclick={addTodoItem}>Add</span>
+    </div>
+    <ul id="myUL">
+        <template for:each={todoItems} for:item="item" for:index="index">
+            <li key={item.id}>
+                {item.value}
+                <span style="float: right; margin-right: 3%;"
+                    >{item.timestamp}</span
+                >
+                <span class="close" onclick={deleteTodo} data-index={index}
+                    >×</span
+                >
+            </li>
+        </template>
+    </ul>
+</template>
